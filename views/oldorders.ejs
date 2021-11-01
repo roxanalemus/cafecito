@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='pos.css'>
+  </head>
+
+  <body>
+
+    <h3>Past Orders</h3>          
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Order Number</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Order</th>
+          <th scope="col">Total</th>
+          <th scope="col">Status</th>
+          <th scope="col">Barista</th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+ 
+        <% for(var i=0 ; i<coffeeOrders.length; i++) {%>
+         
+          <tr>
+            <th scope="row"><%= i + 1 %></th>
+            <td><%= coffeeOrders[i].customerName %></td>
+            <td><span><%= coffeeOrders[i].coffee %></span> <br>
+                <span><%= coffeeOrders[i].tea %></span><br>
+                <span><%= coffeeOrders[i].juice %></span></td>
+            <td><span><%= coffeeOrders[i].total %></span> 
+
+         <% if (coffeeOrders[i].status) { %>
+              <td><span class="completed">Complete</span></td>
+          <% } else { %>
+            <td><span class="completed" id="<%= coffeeOrders[i]._id %>">Pending</span></td>
+          <% } %>
+
+            <td><%= coffeeOrders[i].barista %></td>
+            
+        </tr> 
+        <% } %>
+      </tbody>
+    </table>    
+    </body>
+</html> -->

@@ -1,0 +1,85 @@
+body{
+    background: #56667a;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.choices{
+    background-color: #a7adc6;
+    display:flex;
+}
+
+#coffee, #tea, #juice, .submission{
+    border: 1px solid black;
+    width: 200px;
+    height: 400px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    flex:1;
+    margin:3px;
+    /* background: rgb(0, 0, 0); */
+}
+
+li{
+    list-style: none;
+}
+
+i{
+    margin: 20px 0 5px 0;
+}
+
+img{
+margin-top: 20px;
+}
+
+/* .submission{
+    /* display:flex;
+} */
+
+#itemQuantitySection, #customerNameSection{
+    width:100px;
+    flex:1;
+}
+
+#customerNameSection{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+button{
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+    border-radius: 12px;
+    background: #8797af;
+}
+button:hover{
+    border: 2px #2c1320 solid ;
+}
+
+button:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+     outline: none;
+
+}
+
+button:focus {
+    background: #e5e5e5;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
